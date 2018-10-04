@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:text="@string/delete_category_dialog_title"
+        android:textColor="?attr/colorTitleText"
+        android:background="?attr/appBarBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:text="@string/delete_category_dialog_description"
+        android:textColor="?attr/colorTitleText"
+        android:background="?attr/appBarBackground"/>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/delete_category_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/cancel_delete_category_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/delete_category_fragment_cancel_text"
+            android:textColor="?attr/listItemTextColor"
+            android:background="?attr/listItemBackgroundColor"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?attr/lineDividerColor"/>
+
+        <Button
+            android:id="@+id/delete_category_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/delete_category_fragment_delete_text"
+            android:textColor="@color/buttonsColor"
+            android:background="?attr/listItemBackgroundColor"/>
+    </LinearLayout>
+
+</LinearLayout>

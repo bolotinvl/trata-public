@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appearance_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:contentInsetStart="4dp"
+        app:contentInsetEnd="4dp"
+        android:theme="@style/AppTheme.AppBar"
+        android:background="?attr/appBarBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/appearance_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:scaleType="center"
+                android:background="@drawable/selectable_item_background_circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/title_appearance"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:textColor="?attr/colorTitleText" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/theme_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appearance_toolbar"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="?attr/listHeaderItemTextColor"
+        android:text="@string/activity_appearance_theme_string"/>
+
+    <LinearLayout
+        android:id="@+id/default_theme_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/listItemBackgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/selectable_item_background"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme_text_view">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/appearance_default_theme"
+            android:textColor="?attr/listItemTextColor"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/default_theme_tick"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_tick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dark_theme_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/listItemBackgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/selectable_item_background"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/default_theme_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/lineDividerColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="@string/appearance_dark_theme"
+                android:textColor="?attr/listItemTextColor"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/dark_theme_tick"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/display_mode_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dark_theme_layout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:textColor="?attr/listHeaderItemTextColor"
+        android:text="@string/activity_appearance_display_mode_string"/>
+
+    <LinearLayout
+        android:id="@+id/default_mode_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/listItemBackgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/selectable_item_background"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_mode_text_view">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/activity_appearance_default_mode"
+            android:textColor="?attr/listItemTextColor"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/default_mode_tick"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_tick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/compact_mode_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/listItemBackgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/selectable_item_background"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/default_mode_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/lineDividerColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="@string/activity_appearance_compact_mode"
+                android:textColor="?attr/listItemTextColor"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/compact_mode_tick"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

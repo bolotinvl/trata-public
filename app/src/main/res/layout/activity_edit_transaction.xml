@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_transaction_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="?attr/appBarBackground"
+        android:theme="@style/AppTheme.AppBar"
+        app:contentInsetEnd="4dp"
+        app:contentInsetStart="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/edit_transaction_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selectable_item_background_circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="68dp"
+                android:maxLines="1"
+                android:text="@string/title_edit_transaction"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:textColor="?attr/colorTitleText" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/transaction_parameters_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_transaction_toolbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_transaction_amount_text"
+                android:textAppearance="@style/EditTransactionText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_transaction_date_text"
+                android:textAppearance="@style/EditTransactionText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_transaction_category_text"
+                android:textAppearance="@style/EditTransactionText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_transaction_note_text"
+                android:textAppearance="@style/EditTransactionText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_amount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:paddingRight="16dp"
+                android:textColor="?attr/customEditTextColor"
+                android:textColorHint="?attr/customEditHintColor"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/date_picker_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:foreground="@drawable/selectable_item_background"
+                    android:gravity="center_vertical"
+                    android:textColor="?attr/listItemTextColor"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_weight="1"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_arrow_drop_down_grey" />
+
+                <TextView
+                    android:id="@+id/time_picker_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:foreground="@drawable/selectable_item_background"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="?attr/listItemTextColor"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_drop_down_grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_transaction_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:foreground="@drawable/selectable_item_background"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/edit_transaction_category_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/edit_transaction_category_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingStart="8dp"
+                    android:textColor="?attr/listItemTextColor"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_right" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_transaction_note"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/listItemBackgroundColor"
+                android:ellipsize="end"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:paddingRight="16dp"
+                android:textColor="?attr/customEditTextColor"
+                android:textColorHint="?attr/customEditHintColor"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:context="com.bolotin.trata.MapsActivity"
+        app:layout_constraintTop_toBottomOf="@id/transaction_parameters_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delete_category_list_item_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/state_list_category_item_background">
+
+    <ImageView
+        android:id="@+id/delete_category_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/delete_category_icon_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/house" />
+
+        <TextView
+            android:id="@+id/delete_category_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?attr/listItemTextColor"
+            tools:text="Home" />
+
+    </LinearLayout>
+
+</LinearLayout>

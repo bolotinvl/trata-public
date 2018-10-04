@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common colors -->
+    <color name="editTransactionTextColor">#AAAAAA</color>
+    <color name="buttonsColor">#DF3E4D</color>
+    <color name="buttonsPressedColor">#BC2539</color>
+    <color name="tickColor">#007AFF</color>
+    <color name="tabIndicatorColor">#D56670</color>
+    <color name="colorAccent">#D56670</color>
+
+    <!-- Set of the default theme colors -->
+    <color name="colorPrimaryDefault">@android:color/white</color>
+    <color name="colorPrimaryDarkDefault">#CCCCCC</color>
+
+    <!-- App bar colors -->
+    <color name="titleTextColorDefault">#595D6F</color>
+    <color name="subTitleTextColorDefault">#45485A</color>
+
+    <!-- Action mode color -->
+    <color name="actionModeBackgroundColorDefault">@color/colorPrimaryDarkDefault</color>
+
+    <!-- Tab layout color -->
+    <color name="tabLayoutUnselectedTextColorDefault">#CCCCCC</color>
+
+    <!-- Background color -->
+    <color name="colorBackgroundDefault">@color/colorPrimaryDefault</color>
+
+    <!-- List item colors -->
+    <color name="listItemBackgroundColorDefault">#F6F6F8</color>
+    <color name="listItemTextColorDefault">#535C67</color>505D6A
+    <color name="listHeaderItemTextColorDefault">#717686</color>
+    <color name="lineDividerColorDefault">#EFEFF1</color>
+
+    <!-- Bottom bar colors -->
+    <color name="bottomBarIconBackgroundColorDefault">#E5E5E7</color>
+    <color name="bottomBarBackgroundColorDefault">#EEEEEE</color>
+    <color name="bottomBarEditBackgroundColorDefault">@android:color/white</color>
+    <color name="bottomBarCategoryIconColorDefault">#7F8A97</color>
+
+    <!-- State pressed colors -->
+    <color name="colorPressedItemDefault">#CCCCCC</color>
+    <color name="colorPressedCategoryButtonDefault">#CDCECE</color>
+
+    <!-- Category icon colors -->
+    <color name="categoryIconColorDefault">#D56670</color>
+    <color name="categoryIconBackgroundDefault">#F6F6F8</color>
+
+    <!-- Chart background color -->
+    <color name="chartBackgroundColorDefault">@android:color/white</color>
+
+    <!-- EditText view colors -->
+    <color name="bottomBarEditHintColorDefault">#C1C1C3</color>
+    <color name="bottomBarEditTextColorDefault">#535C67</color>
+    <color name="editTextTintColorDefault">#535C67</color>
+
+    <!-- Disabled menu button color -->
+    <color name="disabledButtonColorDefault">#CCCCCC</color>
+
+    <!-- Progress bar color -->
+    <color name="progressBarColorDefault">#D56670</color>
+
+    <!-- Date picker colors -->
+    <color name="datePickerCustomTitleBackgroundColorDefault">#595D6F</color>
+    <color name="datePickerCustomTitleTextColorDefault">@android:color/white</color>
+
+    <!-- Ripple color -->
+    <color name="rippleColorDefault">#D9D9D9</color>
+
+    <!-- Tick color -->
+    <color name="tickColorDefault">#D56670</color>
+
+
+
+    <!-- Set of the dark theme colors -->
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colorPrimaryDarkDark">@android:color/black</color>
+
+    <!-- App bar colors -->
+    <color name="titleTextColorDark">@android:color/white</color>
+    <color name="subTitleTextColorDark">@android:color/white</color>
+
+    <!-- Action mode color -->
+    <color name="actionModeBackgroundColorDark">#4B494C</color>
+
+    <!-- Tab layout color -->
+    <color name="tabLayoutUnselectedTextColorDark">#666666</color>
+
+    <!-- Background color -->
+    <color name="colorBackgroundDark">@android:color/black</color>
+
+    <!-- List item colors -->
+    <color name="listItemBackgroundColorDark">#323132</color>
+    <color name="listItemTextColorDark">@android:color/white</color>
+    <color name="listHeaderItemTextColorDark">#8F8E92</color>
+    <color name="lineDividerColorDark">#474648</color>
+
+    <!-- Bottom bar colors -->
+    <color name="bottomBarIconBackgroundColorDark">#4B494C</color>
+    <color name="bottomBarBackgroundColorDark">#3C3B3D</color>
+    <color name="bottomBarEditBackgroundColorDark">#666666</color>
+    <color name="bottomBarCategoryIconColorDark">@android:color/white</color>
+
+    <!-- State pressed colors -->
+    <color name="colorPressedItemDark">#F2F5F9</color>
+    <color name="colorPressedCategoryButtonDark">#CDCECE</color>
+
+    <!-- Category icon colors -->
+    <color name="categoryIconColorDark">@android:color/white</color>
+    <color name="categoryIconBackgroundDark">#454346</color>
+
+    <!-- Chart background color -->
+    <color name="chartBackgroundColorDark">@color/colorPrimaryDarkDark</color>
+
+    <!-- EditText view colors -->
+    <color name="bottomBarEditHintColorDark">#C5C5C5</color>
+    <color name="bottomBarEditTextColorDark">@android:color/white</color>
+    <color name="editTextTintColorDark">@android:color/white</color>
+
+    <!-- Disabled menu button color -->
+    <color name="disabledButtonColorDark">#474648</color>
+
+    <!-- Progress bar color -->
+    <color name="progressBarColorDark">@android:color/white</color>
+
+    <!-- Date picker colors -->
+    <color name="datePickerCustomTitleBackgroundColorDark">#535C67</color>
+    <color name="datePickerCustomTitleTextColorDark">@android:color/white</color>
+
+    <!-- Ripple color -->
+    <color name="rippleColorDark">#4D4D4D</color>
+
+    <!-- Tick color -->
+    <color name="tickColorDark">@android:color/white</color>
+</resources>

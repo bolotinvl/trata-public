@@ -1,0 +1,4 @@
+<vector android:height="24dp" android:viewportHeight="48.0"
+    android:viewportWidth="48.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?attr/categoryIconColor" android:pathData="M0,4v23l0,0c0,4.97 4.03,9 9,9h8.72l-1.5,6h-3.22v2h22v-2h-3.22l-1.5,-6h8.72l-0,-0c4.97,0 9,-4.03 9,-9v-23h-48ZM29.72,42h-11.44l1.5,-6h8.44ZM46,27v0c0,3.87 -3.13,7 -7,7h-30l-0,-0c-3.87,-0 -7,-3.13 -7,-7c0,0 0,-0 0,-0v-21h44v21Z"/>
+</vector>

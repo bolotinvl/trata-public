@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App bar color attributes -->
+    <attr name="appBarBackground" format="reference|color" />
+    <attr name="colorTitleText" format="reference|color" />
+    <attr name="subTitleTextColor" format="reference|color" />
+
+    <!-- Action bar color attribute -->
+    <attr name="actionBarBackground" format="reference|color" />
+
+    <!-- List item color attributes -->
+    <attr name="listItemBackgroundColor" format="reference|color" />
+    <attr name="listItemTextColor" format="reference|color" />
+    <attr name="listHeaderItemTextColor" format="reference|color" />
+    <attr name="lineDividerColor" format="reference|color" />
+
+    <!-- Bottom bar color attributes -->
+    <attr name="bottomBarBackgroundColor" format="reference|color" />
+    <attr name="bottomBarIconBackgroundColor" format="reference|color" />
+    <attr name="bottomBarEditBackgroundColor" format="reference|color" />
+
+    <!-- Edit text view color attributes -->
+    <attr name="customEditHintColor" format="reference|color" />
+    <attr name="customEditTextColor" format="reference|color" />
+    <attr name="editTextTintColor" format="reference|color" />
+
+    <!-- Edit transaction titles text attribute -->
+    <attr name="editTransactionTextColor" format="reference|color" />
+
+    <!-- Chart color attribute -->
+    <attr name="chartBackgroundColor" format="reference|color" />
+
+    <!-- Category icon color attributes -->
+    <attr name="categoryIconColor" format="reference|color" />
+    <attr name="categoryIconBackgroundColor" format="reference|color" />
+
+    <!-- Progress bar color attribute -->
+    <attr name="progressBarColor" format="reference|color" />
+
+    <!-- Tab layout color attributes -->
+    <attr name="tabLayoutUnselectedTextColor" format="reference|color" />
+    <attr name="datePickerCustomTitleBackgroundColor" format="reference|color" />
+
+    <!-- Date picker color attribute -->
+    <attr name="datePickerCustomTitleTextColor" format="reference|color" />
+
+    <!-- Ripple color attribute -->
+    <attr name="rippleColorAttr" format="reference|color" />
+
+    <!-- Tick color attribute -->
+    <attr name="tickColor" format="reference|color" />
+</resources>

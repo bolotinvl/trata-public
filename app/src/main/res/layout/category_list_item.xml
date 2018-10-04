@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_list_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/state_list_category_item_background"
+    android:foreground="@drawable/selectable_item_background">
+
+    <ImageView
+        android:id="@+id/category_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/category_group_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/category_icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                tools:src="@drawable/house" />
+
+            <ImageView
+                android:id="@+id/category_tick_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/category_icon_view"
+                android:layout_alignEnd="@id/category_icon_view"
+                android:src="@drawable/ic_tick_white" />
+
+            <TextView
+                android:id="@+id/category_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/category_icon_view"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:paddingStart="56dp"
+                android:layout_toEndOf="@id/category_icon_view"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                android:textColor="?attr/listItemTextColor"
+                tools:text="Home" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/category_handle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_reorder" />
+
+        <ImageView
+            android:id="@+id/category_arrow_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_keyboard_arrow_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

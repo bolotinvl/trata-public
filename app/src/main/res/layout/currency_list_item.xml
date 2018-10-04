@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currency_list_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/listItemBackgroundColor"
+    android:foreground="@drawable/selectable_item_background">
+
+    <ImageView
+        android:id="@+id/currency_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/currency_text_view"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textColor="?attr/listItemTextColor" />
+
+        <ImageView
+            android:id="@+id/currency_tick_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_tick" />
+
+    </LinearLayout>
+
+</LinearLayout>

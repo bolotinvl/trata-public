@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_transaction_compact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/listItemBackgroundColor"
+    android:foreground="@drawable/selectable_item_background">
+
+    <ImageView
+        android:id="@+id/line_divider_transaction_compact"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/category_icon_transaction_compact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            tools:src="@drawable/coffee" />
+
+        <TextView
+            android:id="@+id/note_transaction_compact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="?attr/listItemTextColor"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Expense Name"/>
+
+        <TextView
+            android:id="@+id/value_transaction_compact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textSize="@dimen/text_size"
+            android:textColor="?attr/listItemTextColor"
+            tools:text="500"/>
+
+    </LinearLayout>
+
+</LinearLayout>

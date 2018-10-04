@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/analytics_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/listItemBackgroundColor"
+    android:foreground="@drawable/selectable_item_background">
+
+    <ImageView
+        android:id="@+id/analytics_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/lineDividerColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/analytics_icon_view"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:layout_marginRight="8dp"
+            tools:src="@drawable/coffee" />
+
+        <TextView
+            android:id="@+id/analytics_name_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="?attr/listItemTextColor"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Category Name"/>
+
+        <TextView
+            android:id="@+id/analytics_value_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:textColor="?attr/listItemTextColor"
+            tools:text="500"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_keyboard_arrow_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+*.iml
+*.log
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea
+.gitconfig
+.viminfo
+.DS_Store
+/build
+/.gradle
+/captures
+.externalNativeBuild
+app/release

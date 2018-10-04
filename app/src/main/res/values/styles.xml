@@ -1,0 +1,175 @@
+<resources>
+
+    <!-- Common style's items for App theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Hide action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base theme in default style -->
+    <style name="AppTheme.Default" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryDefault</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDefault</item>
+
+        <!-- App bar style -->
+        <item name="appBarBackground">@color/colorPrimaryDefault</item>
+        <item name="colorTitleText">@color/titleTextColorDefault</item>
+        <item name="subTitleTextColor">@color/subTitleTextColorDefault</item>
+
+        <!-- Action mode style -->
+        <item name="android:actionModeBackground">@color/actionModeBackgroundColorDefault</item>
+        <item name="actionButtonStyle">@style/AppTheme.Widget.ActionButton</item>
+        <item name="actionMenuTextAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- App background style -->
+        <item name="android:windowBackground">@color/colorBackgroundDefault</item>
+
+        <!-- List item style -->
+        <item name="listItemBackgroundColor">@color/listItemBackgroundColorDefault</item>
+        <item name="listItemTextColor">@color/listItemTextColorDefault</item>
+        <item name="listHeaderItemTextColor">@color/listHeaderItemTextColorDefault</item>
+        <item name="lineDividerColor">@color/lineDividerColorDefault</item>
+
+        <!-- Bottom bar style -->
+        <item name="bottomBarBackgroundColor">@color/bottomBarBackgroundColorDefault</item>
+        <item name="bottomBarIconBackgroundColor">@color/bottomBarIconBackgroundColorDefault</item>
+        <item name="bottomBarEditBackgroundColor">@color/bottomBarEditBackgroundColorDefault</item>
+
+        <!-- EditTextView style -->
+        <item name="customEditHintColor">@color/bottomBarEditHintColorDefault</item>
+        <item name="customEditTextColor">@color/bottomBarEditTextColorDefault</item>
+        <item name="editTextTintColor">@color/editTextTintColorDefault</item>
+
+        <!-- Edit transaction subtitles style -->
+        <item name="editTransactionTextColor">@color/editTransactionTextColor</item>
+
+        <!-- Chart style -->
+        <item name="chartBackgroundColor">@color/chartBackgroundColorDefault</item>
+
+        <!-- Category icon style -->
+        <item name="categoryIconColor">@color/categoryIconColorDefault</item>
+        <item name="categoryIconBackgroundColor">@color/categoryIconBackgroundDefault</item>
+
+        <!-- Progress bar style -->
+        <item name="progressBarColor">@color/progressBarColorDefault</item>
+
+        <!-- TabLayout style -->
+        <item name="tabLayoutUnselectedTextColor">@color/tabLayoutUnselectedTextColorDefault</item>
+
+        <!-- DatePicker style -->
+        <item name="datePickerCustomTitleBackgroundColor">@color/datePickerCustomTitleBackgroundColorDefault</item>
+        <item name="datePickerCustomTitleTextColor">@color/datePickerCustomTitleTextColorDefault</item>
+
+        <!-- Ripple style -->
+        <item name="rippleColorAttr">@color/rippleColorDefault</item>
+
+        <!-- Tick style -->
+        <item name="tickColor">@color/tickColorDefault</item>
+    </style>
+
+    <!-- Base theme in dark style -->
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDark</item>
+
+        <!-- App bar style -->
+        <item name="appBarBackground">@color/colorPrimaryDark</item>
+        <item name="colorTitleText">@color/titleTextColorDark</item>
+        <item name="subTitleTextColor">@color/subTitleTextColorDark</item>
+
+        <!-- Action mode style -->
+        <item name="android:actionModeBackground">@color/actionModeBackgroundColorDark</item>
+        <item name="actionButtonStyle">@style/AppTheme.Widget.ActionButton</item>
+        <item name="actionMenuTextAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- App background style -->
+        <item name="android:windowBackground">@color/colorBackgroundDark</item>
+
+        <!-- List item style -->
+        <item name="listItemBackgroundColor">@color/listItemBackgroundColorDark</item>
+        <item name="listItemTextColor">@color/listItemTextColorDark</item>
+        <item name="listHeaderItemTextColor">@color/listHeaderItemTextColorDark</item>
+        <item name="lineDividerColor">@color/lineDividerColorDark</item>
+
+        <!-- Bottom bar style -->
+        <item name="bottomBarBackgroundColor">@color/bottomBarBackgroundColorDark</item>
+        <item name="bottomBarIconBackgroundColor">@color/bottomBarIconBackgroundColorDark</item>
+        <item name="bottomBarEditBackgroundColor">@color/bottomBarEditBackgroundColorDark</item>
+
+        <!-- EditTextView style -->
+        <item name="customEditHintColor">@color/bottomBarEditHintColorDark</item>
+        <item name="customEditTextColor">@color/bottomBarEditTextColorDark</item>
+        <item name="editTextTintColor">@color/editTextTintColorDark</item>
+
+        <!-- Edit transaction subtitles style -->
+        <item name="editTransactionTextColor">@color/editTransactionTextColor</item>
+
+        <!-- Chart style -->
+        <item name="chartBackgroundColor">@color/chartBackgroundColorDark</item>
+
+        <!-- Category icon style -->
+        <item name="categoryIconColor">@color/categoryIconColorDark</item>
+        <item name="categoryIconBackgroundColor">@color/categoryIconBackgroundDark</item>
+
+        <!-- Progress bar style -->
+        <item name="progressBarColor">@color/progressBarColorDark</item>
+
+        <!-- TabLayout style -->
+        <item name="tabLayoutUnselectedTextColor">@color/tabLayoutUnselectedTextColorDark</item>
+
+        <!-- DatePicker style -->
+        <item name="datePickerCustomTitleBackgroundColor">@color/datePickerCustomTitleBackgroundColorDark</item>
+        <item name="datePickerCustomTitleTextColor">@color/datePickerCustomTitleTextColorDark</item>
+
+        <!-- Ripple style -->
+        <item name="rippleColorAttr">@color/rippleColorDark</item>
+
+        <!-- Tick style -->
+        <item name="tickColor">@color/tickColorDark</item>
+    </style>
+
+    <!-- Somehow changes tab layout text color -->
+    <style name="AppTheme.AppBar" parent="Base.ThemeOverlay.AppCompat.Dark" />
+
+    <!-- Disable all caps for action bar text -->
+    <style name="AppTheme.Widget.ActionButton" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- Edit transaction subtitles text -->
+    <style name="EditTransactionText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">?attr/editTransactionTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <!-- DatePicker style -->
+    <style name="DateTimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/titleTextColorDefault</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryDefault</item>
+        <item name="android:textColorSecondaryInverse">@color/colorPrimaryDefault</item>
+    </style>
+
+    <!-- TabLayout style -->
+    <style name="TextAppearanceTabLayout" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Popup on transaction's item default style -->
+    <style name="PopupStyle.Default" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorBackground">@color/listItemBackgroundColorDefault</item>
+        <item name="android:textColorAlertDialogListItem">@android:color/black</item>
+    </style>
+
+    <!-- Popup on transaction's item dark stule -->
+    <style name="PopupStyle.Dark" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorBackground">@color/listItemBackgroundColorDark</item>
+        <item name="android:textColorAlertDialogListItem">@android:color/white</item>
+    </style>
+
+</resources>
